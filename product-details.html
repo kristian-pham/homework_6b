@@ -17,7 +17,7 @@
     <a href="about-us.html" class="navbar">About us</a> &emsp; &emsp; &emsp;
     <a href="" class="navbar">Locations</a>&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
     <a href="" class="navbar">Log in</a>&emsp; &emsp;
-    <a href="your-cart.html" class="navbar">Cart</a>
+    <a href="your-cart.html" class="navbar">Cart<span id='clicks'> (0)</span></a>
   </nav>
 </div>
 
@@ -46,16 +46,16 @@
       <p class="detail"><strong>Quantity</strong></p>
         <div class="row quantity">
           <div class="column total-button">
-            <button types="button" class="count selected" id="one" onclick="changePrice()">1</button> &emsp; &emsp;
+            <button types="button" class="count selected" id="one">1</button> &emsp; &emsp;
           </div>
           <div class="column">
-            <button types="button" class="count" id="three" onclick="changePrice()">3</button> &emsp; &emsp;
+            <button types="button" class="count" id="three">3</button> &emsp; &emsp;
           </div>
           <div class="column">
-            <button types="button" class="count" id="six" onclick="changePrice()">6</button> &emsp; &emsp;
+            <button types="button" class="count" id="six">6</button> &emsp; &emsp;
           </div>
           <div class="column">
-            <button types="button" class="count" id="twelve" onclick="changePrice()">12</button> &emsp; &emsp;
+            <button types="button" class="count" id="twelve">12</button> &emsp; &emsp;
           </div>
         </div>
       <p class="detail"><strong>Glaze</strong></p>
@@ -69,7 +69,7 @@
         </div>
       <p class="detail"><strong>Total</strong></p>
       <div class="total-button">
-      <button type="button" class="pink-stroke-button" id="tot-price">$6.99</button><button type="button" class="pink-button" onclick="itemAdded()">Add to cart</button>
+      <button type="button" class="pink-stroke-button" id="tot-price">$6.99</button><button class="pink-button" onClick="cartAddOne()">Add to cart</button>
       </div>
     </div>
   </div>
