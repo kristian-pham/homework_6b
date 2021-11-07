@@ -36,7 +36,7 @@ console.log('here ' + cartQty);
 function cartAddOne() {
   cartQty += 1;
   localStorage.setItem('cartNumber', cartQty);
-  document.getElementById('clicks').innerHTML = " (" + cartQty + ")";
+  document.getElementById('clicks').innerHTML = " (" + localStorage.getItem('cartNumber') + ")";
 }
 
 // cart page display
