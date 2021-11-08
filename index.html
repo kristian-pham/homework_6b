@@ -4,8 +4,9 @@
   <title>Bun Bun | Home</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
+  <script src="main.js"></script>
 </head>
-<body>
+<body onload="updateCartNav()">
 
 <!-- Header -->
 
@@ -16,7 +17,7 @@
     <a href="about-us.html" class="navbar">About us</a> &emsp; &emsp; &emsp;
     <a href="" class="navbar">Locations</a>&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
     <a href="" class="navbar">Log in</a>&emsp; &emsp;
-    <a href="your-cart.html" class="navbar">Cart</a>
+    <a href="your-cart.html" class="navbar">Cart<span id='clicks'> (0)</span></a>
   </nav>
 </div>
 
