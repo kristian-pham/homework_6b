@@ -58,5 +58,3 @@ function emptyCart (){
     document.getElementById('itemInCart').innerHTML = "hi";
   }
 }
-
-emptyCart()

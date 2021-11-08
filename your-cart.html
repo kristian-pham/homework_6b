@@ -4,9 +4,9 @@
   <title>Bun Bun | Your cart</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito">
-  <script async src="main.js"></script>
+  <script src="main.js"></script>
 </head>
-<body onload="updateCartNav()">
+<body onload="updateCartNav(); emptyCart();">
 
 <!-- Header and navigation start here -->
 
@@ -66,7 +66,7 @@
     </br>
     <p>&emsp; Milk-glaze</p>
     <p id="count">&emsp; 12ct</p>
-    <p class="delete-item">&ensp; &ensp; &ensp; <a class="delete-item" id="delete" onclick="removeItem()">Delete item</a></p>
+    <p class="delete-item">&ensp; &ensp; &ensp; <a class="delete-item" id="delete" onclick="removeItem(); location.reload();">Delete item</a></p>
   </div>
   <div class="column right">
     <strong>&emsp; &emsp; &emsp; $83.88</strong>
@@ -143,6 +143,5 @@
         </div>
     </div>
   </div>
-  <script src="main.js"></script>
 
 </body>
