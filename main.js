@@ -46,7 +46,7 @@ function removeItem() {
 // when var cartQty is zero, show "your cart is empty"
 
 function emptyCart (){
-  if (parseInt(localStorage.getItem('cartNumber')) > 1) {
+  if (parseInt(localStorage.getItem('cartNumber')) >= 1) {
     console.log(parseInt(localStorage.getItem('cartNumber')));
     console.log('if');
     document.getElementById('noItems').style.display = "none";
